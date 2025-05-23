@@ -1,6 +1,10 @@
 # Python program to search the pattern in given text 
 # using KMP Algorithm
 
+
+def printHello():
+    print("Hello to you")
+
 def constructLps(pat, lps):
     
     # len stores the length of longest prefix which 

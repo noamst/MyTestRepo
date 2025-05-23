@@ -5,6 +5,8 @@
 def printHello():
     print("Hello to you")
 
+    print("Another update")
+
 def constructLps(pat, lps):
     
     # len stores the length of longest prefix which 

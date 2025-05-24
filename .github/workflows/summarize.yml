@@ -26,3 +26,5 @@ jobs:
         run: python scripts/extract_diff.py
         env:
           SUMMARIZER_URL: https://gitchangesummary.onrender.com/summarize
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          

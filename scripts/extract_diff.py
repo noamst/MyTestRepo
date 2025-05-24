@@ -5,7 +5,7 @@ import os
 import sys
 
 
-groq_api_key = os.getenv("GROQ_API_KEY")
+
 def get_latest_diff():
     """Returns the latest commit hash and diff text"""
     commit_hash = subprocess.check_output(
@@ -21,6 +21,7 @@ def get_latest_diff():
 
 def send_to_summarizer(commit_hash, diff):
     url = os.getenv("SUMMARIZER_URL")
+    groq_api_key = os.getenv("GROQ_API_KEY")
     payload = {
         "commit_hash": commit_hash,
         "diff": diff ,

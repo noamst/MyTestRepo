@@ -4,6 +4,8 @@ import requests
 import os
 import sys
 
+
+groq_api_key = os.getenv("GROQ_API_KEY")
 def get_latest_diff():
     """Returns the latest commit hash and diff text"""
     commit_hash = subprocess.check_output(
@@ -18,10 +20,11 @@ def get_latest_diff():
     return commit_hash, diff
 
 def send_to_summarizer(commit_hash, diff):
-    url = os.getenv("SUMMARIZER_URL", "http://localhost:8000/summarize")
+    url = os.getenv("SUMMARIZER_URL")
     payload = {
         "commit_hash": commit_hash,
-        "diff": diff
+        "diff": diff ,
+        "groq_api_key": groq_api_key
     }
     response = requests.post(url, json=payload)
     if response.status_code != 200:

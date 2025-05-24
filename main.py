@@ -2,10 +2,7 @@
 # using KMP Algorithm
 
 
-def printHello():
-    print("Hello to you")
 
-    print("Another update")
 
 def constructLps(pat, lps):
     

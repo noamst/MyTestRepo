@@ -25,4 +25,4 @@ jobs:
       - name: Send Git diff to summarizer
         run: python scripts/extract_diff.py
         env:
-          SUMMARIZER_URL: https://localhost:8000/summarize
+          SUMMARIZER_URL: https://gitchangesummary.onrender.com/summarize

@@ -18,7 +18,7 @@ def get_latest_diff():
     return commit_hash, diff
 
 def send_to_summarizer(commit_hash, diff):
-    url = os.getenv("SUMMARIZER_URL", "http://localhost:8000/summarize")
+    url = os.getenv("SUMMARIZER_URL")
     payload = {
         "commit_hash": commit_hash,
         "diff": diff

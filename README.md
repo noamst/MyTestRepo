@@ -13,7 +13,7 @@ This is a reusable GitHub Actions + utility script toolkit for integrating autom
 ---
 
 ## 📦 What's Included
-
+```
 .
 ├── .github/
 │ └── workflows/
@@ -22,7 +22,7 @@ This is a reusable GitHub Actions + utility script toolkit for integrating autom
 │ └── extract_diff.py # Script to extract latest commit hash and diff
 ├── README.md
 
-
+```
 
 ## 🚀 How to Use
 
@@ -32,6 +32,9 @@ You can either:
 - ✅ Manually copy `.github/workflows/summarize.yml` and `scripts/extract_diff.py`
 
 > Ensure the `scripts/` folder is added to your project root.
+
+ensure that SUMMARIZER_URL is the URL on which you run the summarizer service.
+
 
 ### 🛠️ Running `act` Locally
 
@@ -45,6 +48,8 @@ You can either:
     ```
 
     Most Windows users run act on x86_64 by default , so no more configuration is needed
+
+
 
 
     

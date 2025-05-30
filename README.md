@@ -33,4 +33,18 @@ You can either:
 
 > Ensure the `scripts/` folder is added to your project root.
 
----
+### 🛠️ Running `act` Locally
+
+    To ensure compatibility across Apple Silicon and Windows machines:
+
+    1. Create a `.actrc` file in the root of your repo that will contain:
+
+    ```
+    --container-architecture linux/amd64
+    -P ubuntu-latest=ghcr.io/catthehacker/ubuntu:act-22.04
+    ```
+
+    Most Windows users run act on x86_64 by default , so no more configuration is needed
+
+
+    
